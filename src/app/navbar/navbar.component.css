@@ -1,0 +1,46 @@
+a{
+    font-weight: bold;
+    color: white;
+}
+*{
+    font-family:cursive;
+}
+.row1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.row1 .box{
+    position: relative;
+    width:20rem;
+    height:20rem;
+    margin:3rem;
+}
+
+.row1 .box:hover .imgBox{
+    transform: translate(-1.5rem, -1.5rem);
+}
+
+.row1 .box:hover .content{
+    transform: translate(3.5rem, 3.5rem);
+}
+
+.imgBox{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:2;
+    transition:all 0.5s ease-in-out;
+}
+
+.imgBox img{
+    width:20rem;
+    height:20rem;
+    object-fit: cover;
+    resize: both;
+}
